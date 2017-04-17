@@ -250,3 +250,4 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+Bh.Web/Bh.Web/Web.Release.config

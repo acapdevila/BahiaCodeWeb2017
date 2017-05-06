@@ -61,7 +61,7 @@ namespace Bh.Web.ViewModels.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to divendres.
+        ///   Looks up a localized string similar to viernes.
         /// </summary>
         public static string CaptchaResult {
             get {
@@ -70,7 +70,7 @@ namespace Bh.Web.ViewModels.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ou, gos, abella o divendres, quin és el dia de la setmana? .
+        ///   Looks up a localized string similar to Huevo, perro, abeja o viernes, ¿cuál es el día de la semana? .
         /// </summary>
         public static string CaptchaWeekDay {
             get {
@@ -79,7 +79,7 @@ namespace Bh.Web.ViewModels.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verifica el teu e-mail..
+        ///   Looks up a localized string similar to Verifica tu e-mail..
         /// </summary>
         public static string EmailAddress {
             get {
@@ -88,7 +88,7 @@ namespace Bh.Web.ViewModels.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Missatge.
+        ///   Looks up a localized string similar to Mensaje.
         /// </summary>
         public static string Message {
             get {
@@ -97,7 +97,7 @@ namespace Bh.Web.ViewModels.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nom.
+        ///   Looks up a localized string similar to Nombre.
         /// </summary>
         public static string Name {
             get {
@@ -106,7 +106,7 @@ namespace Bh.Web.ViewModels.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Telèfon.
+        ///   Looks up a localized string similar to Teléfono.
         /// </summary>
         public static string Phone {
             get {
@@ -115,7 +115,7 @@ namespace Bh.Web.ViewModels.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to El camp {0} és obligatori..
+        ///   Looks up a localized string similar to El campo {0} es obligatorio..
         /// </summary>
         public static string Required {
             get {
@@ -124,7 +124,7 @@ namespace Bh.Web.ViewModels.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escriu menys de {1} caràcters..
+        ///   Looks up a localized string similar to Escribe menos de {1} carácteres..
         /// </summary>
         public static string StringLength {
             get {

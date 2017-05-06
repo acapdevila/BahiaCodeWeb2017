@@ -1,8 +1,4 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
-
-     <!-- Page Header -->
+﻿<!-- Page Header -->
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">
@@ -24,7 +20,90 @@
         </h3>
         <p>
             Web de compra colectiva enfocada a la comarca del Maresme.
+            <a href="#dialogQuedat" onclick="OpenDialog(event,'#dialogQuedat')">Detalles técnicos</a>
         </p>
+
+
+        <div id="dialogQuedat" style="max-width: 600px" title="www.quedat.cat" class="dialog-bn">
+            <div class="tab-bn">
+                <ul>
+                    <li><a href="#tabs-1">Módulos</a></li>
+                    <li><a href="#tabs-2">Tecnologia</a></li>
+                    <li><a href="#tabs-3">Infraestructura</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <ul>
+                        <li>
+                            <strong>Contenidos dinámicos:</strong> Ofertas, Vales, Categorias, Sidebars, Imágenes, Poblaciones, Multi-precio y SEO
+                        </li>
+                        <li>
+                            <strong>Seguridad:</strong> Gestión de usuarios y permisos
+                        </li>
+                        <li>
+                            <strong>Negocios:</strong> Gestión de negocios, back-office negocios, control de vales, impressión de informes
+                        </li>
+                        <li>
+                            <strong>Ventas:</strong> Control integrado de las ventas, pasarela bancaria
+                        </li>
+                        <li>
+                            <strong>Marketing:</strong> Gestión de subscriptores, envío integrado de la newsletter
+                        </li>
+                        <li>
+                            <strong>Fidelidad:</strong> Sistema de puntos y sistema de descuentos promocionales
+                        </li>
+                        <li>
+                            <strong>Administración:</strong> Sistema de facturación integrado, sistema de liquidaciones y gestión de comerciales
+                        </li>
+                    </ul>
+
+                </div>
+                <div id="tabs-2">
+                    <ul>
+                        <li>
+                            <strong>Framework:</strong> Asp.Net 2.0, 3.5 y 4.5, MVC2, MVC3 y MVC4
+                        </li>
+                        <li>
+                            <strong>Base de datos:</strong> Sql Server
+                        </li>
+                        <li>
+                            <strong>Código:</strong> HTML5, CSS, Javascript (jQuery, jQuery UI, AJAX), C#, T-SQL
+                        </li>
+                        <li>
+                            <strong>Hosting:</strong> Windows Server 2012, IIS 8
+                        </li>
+                        <li>
+                            <strong>IDE:</strong> Visual Studio 2010 y 2012
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div id="tabs-3">
+                    <ul>
+                        <li>
+                            <strong>Arquitectura de capas:</strong> Datos (EF), Lógica de negocio (Servicios), Cliente (MVC)
+                        </li>
+                        <li>
+                            <strong>ORM:</strong> Entity Framework Database First
+                        </li>
+                        <li>
+                            <strong>Log de errores:</strong> ELMAH
+                        </li>
+                        <li>
+                            <strong>Log de eventos:</strong> NLog
+                        </li>
+                        <li>
+                            <strong>Informes:</strong> Reporting Services
+                        </li>
+                        <li>
+                            <strong>IoC:</strong> Ninject
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
     </div>
     <div class="col-md-4 portfolio-item">
         
@@ -65,53 +144,224 @@
         </p>
     </div>
     <div class="col-md-4 portfolio-item">
-        <a href="#">
-            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+        <a href="http://www.sportsmol.net" target="_blank">
+            <img class="img-responsive" src="/Images/sportsmol.jpg" alt="Sports Mol Consultoría Deportiva">
         </a>
         <h3>
-            <a href="#">Project Name</a>
+            <a href="http://www.sportsmol.net" target="_blank">Sportsmol.net</a>
         </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        <p>
+            Web de la consultoría deportiva Sports Mol.
+        </p>
     </div>
     <div class="col-md-4 portfolio-item">
-        <a href="#">
-            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+        <a href="http://www.balonmanoalcobendas.org" target="_blank">
+            <img class="img-responsive" src="/Images/alcobendas.jpg" alt="Balonmano Alcobendas">
         </a>
         <h3>
-            <a href="#">Project Name</a>
+            <a href="http://www.balonmanoalcobendas.org" target="_blank">Balonmanoalcobendas.org</a>
         </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        <p>
+            Web del Club Balonmano Alcobendas.
+        </p>
     </div>
 </div>
 
 <!-- Projects Row -->
 <div class="row">
     <div class="col-md-4 portfolio-item">
-        <a href="#">
-            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+        <a href="http://i-estrategia.azurewebsites.net" target="_blank">
+            <img class="img-responsive" src="/Images/i-estrategia.jpg" alt="i-Estrategia">
         </a>
         <h3>
-            <a href="#">Project Name</a>
+            <a href="http://i-estrategia.azurewebsites.net" target="_blank">i-estrategia</a>
         </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        <p>
+            Web presentación de la empresa de comunicación i-Estrategia.
+        </p>
     </div>
     <div class="col-md-4 portfolio-item">
-        <a href="#">
-            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+        <a href="http://santsilvestre.azurewebsites.net/" target="_blank">
+            <img class="img-responsive" src="/Images/santsilvestre.jpg" alt="Sant Silvestre del Masnou">
         </a>
         <h3>
-            <a href="#">Project Name</a>
+            <a href="http://santsilvestre.azurewebsites.net/" target="_blank">Santsilvestre El Masnou</a>
         </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        <p>
+            Web de la carrera San Silvestre del Masnou.
+        </p>
     </div>
     <div class="col-md-4 portfolio-item">
-        <a href="#">
-            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+        <a href="http://www.albertlaura.es" target="_blank">
+            <img class="img-responsive" src="/Images/albertlaura.jpg" alt="Albert y Laura">
         </a>
         <h3>
-            <a href="#">Project Name</a>
+            <a href="http://www.albertlaura.es" target="_blank">AlbertLaura.es</a>
         </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        <p>
+            Presentación e invitación online a una boda.
+        </p>
     </div>
 </div>
 <!-- /.row -->
+
+
+<!-- Projects Row -->
+<div class="row">
+    <div class="col-md-4 portfolio-item">
+        <a href="http://www.lookauto.es" target="_blank">
+            <img class="img-responsive" src="/Images/lookauto.JPG" alt="Look Auto">
+        </a>
+        <h3>
+            <a href="http://www.lookauto.es" target="_blank">LookAuto.es</a>
+        </h3>
+        <p>
+            Portal de compra-venta de coches de ocasión, seminuevos y Km0.
+        </p>
+    </div>
+    <div class="col-md-4 portfolio-item">
+        <a href="https://www.educo.org"  target="_blank">
+            <img class="img-responsive" src="/Images/educo.JPG" alt="Fundación Educo">
+        </a>
+        <h3>
+            <a href="https://www.educo.org"  target="_blank">Educo.org</a>
+        </h3>
+        <p>
+            ONG global de cooperación para el desarrollo que actúa a favor de la infancia y la defensa de sus derechos
+         </p>
+    </div>
+    <div class="col-md-4 portfolio-item">
+        <a href="http://www.atmasnou.cat" target="_blank">
+            <img class="img-responsive" src="/Images/atmasnou.JPG" alt="At Masnou">
+        </a>
+        <h3>
+            <a href="http://www.atmasnou.cat" target="_blank">Atmasnou.cat</a>
+        </h3>
+        <p>
+            Web presentación del Club Atlètic de Masnou con blog de noticias y álbumes de fotografías.
+
+        </p>
+    </div>
+</div>
+<!-- /.row -->
+
+<!-- Projects Row -->
+<div class="row">
+    <div class="col-md-4 portfolio-item">
+        <a href="http://www.mercemm.com" target="_blank">
+            <img class="img-responsive" src="/Images/merce.jpg" alt="Mercemm">
+        </a>
+        <h3>
+            <a href="http://www.mercemm.com" target="_blank">Mercemm.com</a>
+        </h3>
+        <p>
+            Las deliciosas recetas de cocina de Mercè.
+        </p>
+    </div>
+    <div class="col-md-4 portfolio-item">
+        <a href="http://cfalella.buclenet.com" target="_blank">
+            <img class="img-responsive" src="/Images/alella.jpg" alt="Cf. Alella">
+        </a>
+        <h3>
+            <a href="http://cfalella.buclenet.com" target="_blank">Cf. Alella</a>
+        </h3>
+        <p>
+            Web presentación con blog del Club de Fútbol Alella.
+        </p>
+    </div>
+    <div class="col-md-4 portfolio-item">
+        <a href="http://www.ritmodende.com" target="_blank">
+            <img class="img-responsive" src="/Images/ritmodende.jpg" alt="Ritmo Dendè">
+        </a>
+        <h3>
+            <a href="http://www.ritmodende.com" target="_blank">Ritmodende.com</a>
+        </h3>
+        <p>
+            Web presentación con blog de los bailarines Ritmo Dendè.
+
+        </p>
+    </div>
+</div>
+<!-- /.row -->
+
+
+<!-- Projects Row -->
+<div class="row">
+    <div class="col-md-4 portfolio-item">
+        <a href="http://www.sport-ticket.cat" target="_blank">
+            <img class="img-responsive" src="/Images/sport.jpg" alt="Sport Ticket">
+        </a>
+        <h3>
+            <a href="http://www.sport-ticket.cat" target="_blank">Sport-ticket.cat</a>
+        </h3>
+        <p>
+            Web de compra colectiva enfocada al mundo del deporte.
+        </p>
+    </div>
+    <div class="col-md-4 portfolio-item">
+        <a href="http://www.quedatgirona.cat" target="_blank">
+            <img class="img-responsive" src="/Images/quedatgirona.jpg" alt="Queda't Girona">
+        </a>
+        <h3>
+            <a href="http://www.quedatgirona.cat" target="_blank">Quedatgirona.cat</a>
+        </h3>
+        <p>
+            Web de compra colectiva enfocada en la provincia de Gerona.
+        </p>
+    </div>
+    <div class="col-md-4 portfolio-item">
+        <a  href="http://www.arqjm23.com" target="_blank">
+            <img class="img-responsive" src="/Images/arqjm23.jpg" alt="ARQJM">
+        </a>
+        <h3>
+            <a  href="http://www.arqjm23.com" target="_blank">Arqjm23.com</a>
+        </h3>
+        <p>
+            Web presentación del estudio de arquitectura ARQJM23.
+        </p>
+    </div>
+</div>
+<!-- /.row -->
+
+<!--
+albertcapdevila.net
+smoothiesdecuchara.com
+zoovet-software.com
+ip2000
+plederiure
+-->
+
+
+@section scripts{
+    <script type="text/javascript">
+
+                function OpenDialog(event, iddialog) {
+                    event.preventDefault();
+                    $(iddialog).dialog("open");
+                }
+
+                $(function () {
+                    $(".dialog-bn").dialog({
+                        autoOpen: false,
+                        modal: true,
+                        width: 'auto',
+                        //maxWidth:600,
+                        show: {
+                            effect: "fade",
+                            duration: 300
+                        },
+                        hide: {
+                            effect: "fade",
+                            duration: 300
+                        }
+                    });
+
+                    $(".tab-bn").tabs();
+
+                });
+    </script>
+}
+
+
+
+

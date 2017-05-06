@@ -118,27 +118,27 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CaptchaResult" xml:space="preserve">
-    <value>divendres</value>
+    <value>viernes</value>
   </data>
   <data name="CaptchaWeekDay" xml:space="preserve">
-    <value>Ou, gos, abella o divendres, quin és el dia de la setmana? </value>
+    <value>Huevo, perro, abeja o viernes, ¿cuál es el día de la semana? </value>
   </data>
   <data name="EmailAddress" xml:space="preserve">
-    <value>Verifica el teu e-mail.</value>
+    <value>Verifica tu e-mail.</value>
   </data>
   <data name="Message" xml:space="preserve">
-    <value>Missatge</value>
+    <value>Mensaje</value>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>Nom</value>
+    <value>Nombre</value>
   </data>
   <data name="Phone" xml:space="preserve">
-    <value>Telèfon</value>
+    <value>Teléfono</value>
   </data>
   <data name="Required" xml:space="preserve">
-    <value>El camp {0} és obligatori.</value>
+    <value>El campo {0} es obligatorio.</value>
   </data>
   <data name="StringLength" xml:space="preserve">
-    <value>Escriu menys de {1} caràcters.</value>
+    <value>Escribe menos de {1} carácteres.</value>
   </data>
 </root>

@@ -1,18 +1,10 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta http-equiv="Content-Language" content="es-ES">
     <meta name="Author" content="Bahía Code" />
-    <meta name="Description" content="Desarrollo web, e-commerce y Business Intelligence.  Webs eventos deportivos y compra colectiva." />
-    <meta name="Subject" content="Desarrollo web, e-commerce y Business Intelligence.  Webs eventos deportivos y compra colectiva." />
-    <meta name="Keywords" content="programacion web, web tipo Groupalia, web estilo Lets Bonus, clon Groupon Offerum, web cupones, compra colectiva, ASP.Net" />
-    <meta name="Generator" content="BahiaCode">
-    <meta name="Language" content="Spanish">
-    <meta name="Revisit" content="1 day">
-    <meta name="Expires" content="never">
-    <meta name="Distribution" content="Global">
-    <meta name="Copyright" content="Bahía Code" />
-    <meta name="Designer" content="Bahía Code" />
+    <meta name="Description" content="Desarrollo web, e-commerce y Business Intelligence" />
+    <meta name="Keywords" content="programacion web, desarrollo web, maquetación HTML, CSS, ASP.Net" />
     <meta name="Publisher" content="Bahía Code" />
     <meta name="City" content="Barcelona" />
     <meta name="Country" content="Spain" />
@@ -25,39 +17,65 @@
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/themes/base/css")
 
+    <!-- Bootstrap Core CSS -->
+    <link href="content/bootstrap.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="content/landing-page.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="content/font-awesome.css" rel="stylesheet" type="text/css">
 
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/jqueryui")
 
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+<body>    
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Bahía Code", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a class="navbar-brand topnav" href="#">Bahía Code</a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Index", "Contacto")</li>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#desarrolloweb">Desarrollo web</a>
+                    </li>
+                    <li>
+                        <a href="#tecnologia">Tecnología</a>
+                    </li>
+                    <li>
+                        <a href="#bi">Business Intelligence</a>
+                    </li>
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
                 </ul>
-                
             </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container -->
+    </nav>
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+    
+        <!-- /.container -->
     </div>
-    <div class="container body-content">
+    <!-- /.intro-header -->
+    
+   
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Bahía Code S.L</p>
-        </footer>
-    </div>
+     
+  
 
    
     @Scripts.Render("~/bundles/bootstrap")

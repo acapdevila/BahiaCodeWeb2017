@@ -246,10 +246,12 @@
     <Content Include="img\atmasnou.JPG" />
     <Content Include="img\banner-bg.jpg" />
     <Content Include="img\bg.png" />
+    <Content Include="img\Bh.Web.sln.png" />
     <Content Include="img\BizSpark_StartUp.jpg" />
     <Content Include="img\buclenet.png" />
     <Content Include="img\buclenet2.png" />
     <Content Include="img\bullet.png" />
+    <Content Include="img\code.png" />
     <Content Include="img\dog.png" />
     <Content Include="img\Educo.JPG" />
     <Content Include="img\emquedo.jpg" />
@@ -260,6 +262,9 @@
     <Content Include="img\ip2000.jpg" />
     <Content Include="img\ipad.png" />
     <Content Include="img\lang.png" />
+    <Content Include="img\laptop.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\logo2.png" />
     <Content Include="img\lookauto.JPG" />
     <Content Include="img\merce.jpg" />
     <Content Include="img\nedaelmon.jpg" />

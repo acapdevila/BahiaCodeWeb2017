@@ -117,4 +117,8 @@
     <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_variables.scss" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Framework\" />
+  </ItemGroup>
+
 </Project>

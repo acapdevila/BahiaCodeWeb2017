@@ -6,4 +6,115 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="bundleconfig.json" />
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bundleconfig.json" />
+    <None Include="compilerconfig.json" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\js\bootstrap.esm.js" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\js\bootstrap.esm.js.map" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\js\bootstrap.esm.min.js" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\js\bootstrap.esm.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\js\bootstrap.js" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\js\bootstrap.js.map" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\bootstrap-grid.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\bootstrap-reboot.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\bootstrap-utilities.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\bootstrap.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\forms\_floating-labels.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\forms\_form-check.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\forms\_form-control.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\forms\_form-range.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\forms\_form-select.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\forms\_form-text.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\forms\_input-group.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\forms\_labels.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\forms\_validation.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\helpers\_clearfix.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\helpers\_colored-links.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\helpers\_position.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\helpers\_ratio.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\helpers\_stacks.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\helpers\_stretched-link.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\helpers\_text-truncation.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\helpers\_visually-hidden.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\helpers\_vr.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_alert.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_backdrop.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_border-radius.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_box-shadow.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_breakpoints.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_buttons.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_caret.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_clearfix.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_color-scheme.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_container.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_deprecate.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_forms.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_gradients.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_grid.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_image.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_list-group.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_lists.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_pagination.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_reset-text.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_resize.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_table-variants.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_text-truncate.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_transition.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_utilities.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\mixins\_visually-hidden.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\utilities\_api.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\vendor\_rfs.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_accordion.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_alert.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_badge.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_breadcrumb.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_button-group.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_buttons.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_card.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_carousel.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_close.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_containers.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_dropdown.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_forms.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_functions.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_grid.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_helpers.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_images.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_list-group.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_mixins.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_modal.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_nav.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_navbar.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_offcanvas.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_pagination.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_placeholders.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_popover.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_progress.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_reboot.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_root.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_spinners.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_tables.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_toasts.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_tooltip.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_transitions.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_type.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_utilities.scss" />
+    <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_variables.scss" />
+  </ItemGroup>
+
 </Project>

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Bh.AppWeb.Pages
 {
-    public class PrivacyModel : PageModel
+    public class TuEmpresaModel : PageModel
     {
         public void OnGet()
         {

@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Bahía Code · Albert Capdevila">
     
-    <title>@ViewData["Title"] - Bh.AppWeb</title>
+    <title>@(ViewData["Title"] ?? "Bahía Code · Apps personalizadas") </title>
     
     <!-- CSS only -->
     <link rel="stylesheet" href="~/css/bootstrap-custom.min.css" />
@@ -167,25 +167,24 @@
           <header class="d-flex flex-wrap justify-content-center py-3 mb-2 @*border-bottom*@">
               <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                   <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-                  <span class="fs-4">Simple header</span>
+                  <span class="fs-4">Bahía Code</span>
               </a>
 
               <ul class="nav nav-pills">
                   <li class="nav-item">
-                      <a asp-page="/Index" is-active-route class="nav-link" aria-current="page">Home</a>
+                      <a asp-page="/Index" is-active-route class="nav-link" aria-current="page">Inicio</a>
                   </li>
                   <li class="nav-item">
-                      <a asp-page="/Privacy" is-active-route class="nav-link">Privacy</a>
-                  
+                      <a asp-page="/Producto" is-active-route class="nav-link">Producto</a>
                   </li>
                   <li class="nav-item">
-                      <a asp-page="/Precio" is-active-route class="nav-link">Precio</a>
+                      <a asp-page="/Faqs" is-active-route class="nav-link">Preguntas frecuentes</a>
                   </li>
                   <li class="nav-item">
-                      <a asp-page="/Faqs" is-active-route class="nav-link">FAQs</a>
+                      <a asp-page="/SobreNosotros" is-active-route class="nav-link">Sobre nosotros</a>
                   </li>
                   <li class="nav-item">
-                      <a asp-page="/About" is-active-route class="nav-link">About</a>
+                      <a asp-page="/Contacto" is-active-route class="nav-link">Contacto</a>
                   </li>
               </ul>
           </header>

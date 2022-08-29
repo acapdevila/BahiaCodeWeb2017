@@ -1,18 +1,31 @@
 ﻿@page
 @model IndexModel
-@{
-    ViewData["Title"] = "Home page";
-}
-
 
 <div class="bg-dark text-secondary px-4 py-5 text-center">
     <div class="py-5">
-        <h1 class="display-5 fw-bold text-white">Dark mode hero</h1>
+        <h1 class="display-5 fw-bold text-white">
+            Aplicaciones personalizadas
+        </h1>
+        
         <div class="col-lg-6 mx-auto">
-            <p class="fs-5 mb-4 text-white">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <h4 class="fw-bold fs-5 mb-4 text-white">
+                Te ayudamos a ahorrar tiempo para que te centres en lo importante
+                creando aplicaciones personalizadas para tu negocio.
+            </h4>
+
+            <p class="fs-5 mb-4 text-white">
+
+                Convertimos documentos compartidos, Excels, Words, Informes etc. en una aplicación, limpia, ordenada y en un solo lugar.
+                Nosotros nos encargamos de todo, tú piensa que vas a hacer con el tiempo que vas a ganar.
+
+            </p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
-                <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
+                <a asp-page="/Contacto" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                    Reunámonos
+                </a>
+                <a asp-page="/Producto" class="btn btn-outline-light btn-lg px-4">
+                    Saber más
+                </a>
             </div>
         </div>
     </div>
@@ -22,20 +35,37 @@
 
 <div class="px-4 py-5 my-5 text-center">
     @*<img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-    *@
-    <svg class="d-block mx-auto mb-4" width="72" height="57"><use xlink:href="#bootstrap"/></svg>
     
-    <h1 class="display-5 fw-bold">Centered hero</h1>
+    <svg class="d-block mx-auto mb-4" width="72" height="57"><use xlink:href="#bootstrap"/></svg>
+    *@
+    <h1 class="display-5 fw-bold">Gana tiempo y reduce errores</h1>
     <div class="col-lg-6 mx-auto">
        
-        <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <p class="fs-5 mb-4">
+            
+            Realizas un trabajo repetitivo, periódico y manual con uno o varios documentos, por ejemplo con un Excel.
+        </p>
+        <p class="fs-5 mb-4">
+            Llámanos, agendamos una reunión, nos cuentas todo sobre tus documentos. Y creamos una aplicación personalizada que los sustituye.
+        </p>
+        <p class="fs-5 mb-4">
+            Olvida los errores, olvida el desorden, olvida los copy-paste repetitivos. Céntrate en tu negocio, nosotros nos adaptaremos a ti. 
+        
+        </p>
+        <p class="fs-5 mb-4">
+            En Bahía Code nos focalizamos en dar un servicio completo a cada uno de nuestros clientes;
+            ofreciéndoles una programación adaptada a cada una de sus necesidades.
+        </p>
+        <p class="fs-5 mb-4">
+            Nuestra empresa se moldea para darte un servicio de programación a medida.
+        </p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Reunámonos</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Saber más</button>
         </div>
     </div>
 </div>
-<div class="b-example-divider"></div>
+@*<div class="b-example-divider"></div>
 <div class="container col-xl-10 col-xxl-8 px-4 py-5">
     <div class="row align-items-center g-lg-5 py-5">
         <div class="col-lg-7 text-center text-lg-start">
@@ -63,50 +93,199 @@
             </form>
         </div>
     </div>
-</div>
+</div>*@
+
 
 <div class="b-example-divider"></div>
 
-                  <div class="container px-4 py-5" id="featured-3">
-    <h2 class="pb-2 border-bottom">Columns with icons</h2>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
-        </div>
-        <h2>Featured title</h2>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link d-inline-flex align-items-center">
-          Call to action
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
-        </a>
-      </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
-        </div>
-        <h2>Featured title</h2>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link d-inline-flex align-items-center">
-          Call to action
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
-        </a>
-      </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
-        </div>
-        <h2>Featured title</h2>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link d-inline-flex align-items-center">
-          Call to action
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
+<div class="container px-4 py-5" id="icon-grid">
+    <h2 class="pb-2 border-bottom"> Con una aplicación personalizada di adiós a</h2>
 
-  <div class="b-example-divider"></div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <div class="col d-flex align-items-start">
+            <svg class="bi text-muted flex-shrink-0 me-3"
+                 width="1.75em" height="1.75em">
+                <use xlink:href="#collection"/>
+            </svg>
+            <div>
+                <h4 class="fw-bold mb-0">Almacenar miles de carpetas</h4>
+                <p>
+                    A partir de ahora contarás con un historial donde se encontrará todo registrado por fechas o productos/servicios; para encontrarlo de la forma más sencilla y rápida posible.
+                </p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill" /></svg>
+            <div>
+                <h4 class="fw-bold mb-0">Posibles errores</h4>
+                <p>
+                    Puede que haya algún mal entendido y por error se borre un informe con mucho trabajo guardado. Bahía Code no entiende de errores, es todo soluciones.
+                </p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                <use xlink:href="#people-circle" /> @*calendar3*@
+            </svg>
+            <div>
+                <h4 class="fw-bold mb-0">El tener que explicárselo 1000 veces al compañero</h4>
+                <p>Esta app es muy intuitiva y fácil de utilizar para todos.</p>
+                
+
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                <use xlink:href="#geo-fill" /> @*home*@
+            </svg>
+            <div>
+                <h4 class="fw-bold mb-0">
+                    Tener que ir a la oficina para consultar cualquier dato
+                </h4>
+                <p>
+                    Con la app se almacena todo el contenido en la nube, y tienes la versatilidad de poder verlo desde cualquier dispositivo y cuando quieras.
+                </p>
+            </div>
+        </div>
+        @*  <div class="col d-flex align-items-start">
+            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2" /></svg>
+            <div>
+                <h4 class="fw-bold mb-0">Featured title</h4>
+                <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2" /></svg>
+            <div>
+                <h4 class="fw-bold mb-0">Featured title</h4>
+                <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                <use xlink:href="#geo-fill"/>
+            </svg>
+            <div>
+                <h4 class="fw-bold mb-0">Featured title</h4>
+                <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools" /></svg>
+            <div>
+                <h4 class="fw-bold mb-0">Featured title</h4>
+                <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+        </div>*@
+    </div>
+</div>
+<div class="b-example-divider"></div>
+<div class="container py-4">
+
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Fases del proyecto </h1>
+            <p class="col-md-8 fs-4">
+                En Bahía Code buscamos dar un servicio completo, personalizado al 100% y seguro. 
+            </p>
+            <p class="col-md-8 fs-4">
+                Para la creación del proyecto, lo primero que debes hacer es enviarnos un e-mail junto con tu Excel, y explicarnos brevemente en qué consiste tu negocio y a que pertenece esa base de datos.
+            </p>
+            
+            <p class="col-md-8 fs-4">
+                Una vez que tengamos toda la información necesaria, realizaremos un análisis previo para poder valorar si es posible generar una aplicación única. Y a continuación, agendaremos una videoconferencia para conocernos de tú a tú; ya que para nosotros el trato personal es primordial. Así durante la reunión podremos charlar sobre qué es lo que tienes y qué es aquello que esperas. Esto es de gran ayuda para seguir moldeando tu proyecto.
+            </p>
+            
+            <p class="col-md-8 fs-4">
+                El siguiente paso, es que nuestros profesionales desarrollen un documento con las funcionalidades que puede tener la aplicación; para poder enviártelo y que lo valores con tu equipo.
+            </p>
+            
+            <p class="col-md-8 fs-4">
+                Una vez aceptado el presupuesto, comenzamos a trabajar sobre todo lo hablado anteriormente. En caso contrario, quedaremos como amigos y será un placer habernos conocido.
+            </p>
+            
+            <p class="col-md-8 fs-4">
+                Pero ya te adelantamos que en Bahía Code, no nos rendimos tan fácilmente. Queremos ofrecerte el máximo, darte las mejores ventajas y allanarte el camino hacia el orden y la seguridad. ¡Podemos seguir un gran equipo!
+            </p>
+            
+
+            <a asp-page="/Contacto" class="btn btn-primary btn-lg">
+                Reunámonos
+            </a>
+        </div>
+    </div>
+
+    @* <div class="row align-items-md-stretch">
+    <div class="col-md-6">
+    <div class="h-100 p-5 text-white bg-dark rounded-3">
+    <h2>Change the background</h2>
+    <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+    <button class="btn btn-outline-light" type="button">Example button</button>
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="h-100 p-5 bg-light border rounded-3">
+    <h2>Add borders</h2>
+    <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
+    <button class="btn btn-outline-secondary" type="button">Example button</button>
+    </div>
+    </div>
+    </div>*@
+
+</div>
+@*
+<div class="b-example-divider"></div>
+
+<div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">
+        Con una aplicación personalizada di adiós a
+    </h2>
+   
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+            </div>
+            <h2>Almacenar miles de carpetas</h2>
+            <p>
+                A partir de ahora contarás con un historial donde se encontrará todo registrado por fechas o productos/servicios; para encontrarlo de la forma más sencilla y rápida posible.
+            </p>
+             <a href="#" class="icon-link d-inline-flex align-items-center">
+                Call to action
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+            </a>
+        </div>
+        <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+            </div>
+            <h2>Posibles errores</h2>
+            <p>
+                Puede que haya algún mal entendido y por error se borre un informe con mucho trabajo guardado. Bahía Code no entiende de errores, es todo soluciones.
+
+            </p>
+              <a href="#" class="icon-link d-inline-flex align-items-center">
+                Call to action
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+            </a>
+        </div>
+        <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+            </div>
+            <h2>El tener que explicárselo 1000 veces al compañero</h2>
+            <p>
+                Esta app es muy intuitiva y fácil de utilizar para todos.
+            </p>
+            <a href="#" class="icon-link d-inline-flex align-items-center">
+                Call to action
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+            </a>
+        </div>
+    </div>
+</div>
+*@
+ @* <div class="b-example-divider"></div>
 
   <div class="container px-4 py-5" id="hanging-icons">
     <h2 class="pb-2 border-bottom">Hanging icons</h2>
@@ -148,19 +327,21 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>*@
 
   <div class="b-example-divider"></div>
 
   <div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom">Custom cards</h2>
+    <h2 class="pb-2 border-bottom">Casos reales del impacto de una aplicación personalizada</h2>
 
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style="background-image: url('images/unsplash-photo-1.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
-            <ul class="d-flex list-unstyled mt-auto">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg"
+               style="background-image: url('images/unsplash-photo-1.jpg');">
+            <a asp-page="/Caso/Grudiva" class="text-decoration-none">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Caso Grudiva</h2>
+                @*<ul class="d-flex list-unstyled mt-auto">
               <li class="me-auto">
                 <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
               </li>
@@ -172,16 +353,19 @@
                 <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
                 <small>3d</small>
               </li>
-            </ul>
-          </div>
+            </ul>*@
+            </div>
+                </a>
         </div>
       </div>
 
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style="background-image: url('images/unsplash-photo-2.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h2>
-            <ul class="d-flex list-unstyled mt-auto">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" 
+               style="background-image: url('images/unsplash-photo-2.jpg');">
+              <a asp-page="/Caso/Hospifer" class="text-decoration-none">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Caso Hospifer</h2>
+                  @* <ul class="d-flex list-unstyled mt-auto">
               <li class="me-auto">
                 <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
               </li>
@@ -193,16 +377,19 @@
                 <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
                 <small>4d</small>
               </li>
-            </ul>
+            </ul>*@
+              </div>
+              </a>
           </div>
-        </div>
       </div>
 
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style="background-image: url('images/unsplash-photo-3.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h2>
-            <ul class="d-flex list-unstyled mt-auto">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" 
+               style="background-image: url('images/unsplash-photo-3.jpg');">
+            <a asp-page="/Caso/TuEmpresa" class="text-decoration-none">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Tu caso</h2>
+                    @* <ul class="d-flex list-unstyled mt-auto">
               <li class="me-auto">
                 <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
               </li>
@@ -214,78 +401,16 @@
                 <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
                 <small>5d</small>
               </li>
-            </ul>
-          </div>
+                    </ul>*@
+                </div>
+            </a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="b-example-divider"></div>
 
-<div class="container px-4 py-5" id="icon-grid">
-    <h2 class="pb-2 border-bottom">Icon grid</h2>
-
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-        <div class="col d-flex align-items-start">
-            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>
-            <div>
-                <h4 class="fw-bold mb-0">Featured title</h4>
-                <p>Paragraph of text beneath the heading to explain the heading.</p>
-            </div>
-        </div>
-        <div class="col d-flex align-items-start">
-            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"/></svg>
-            <div>
-                <h4 class="fw-bold mb-0">Featured title</h4>
-                <p>Paragraph of text beneath the heading to explain the heading.</p>
-            </div>
-        </div>
-        <div class="col d-flex align-items-start">
-            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"/></svg>
-            <div>
-                <h4 class="fw-bold mb-0">Featured title</h4>
-                <p>Paragraph of text beneath the heading to explain the heading.</p>
-            </div>
-        </div>
-        <div class="col d-flex align-items-start">
-            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"/></svg>
-            <div>
-                <h4 class="fw-bold mb-0">Featured title</h4>
-                <p>Paragraph of text beneath the heading to explain the heading.</p>
-            </div>
-        </div>
-        <div class="col d-flex align-items-start">
-            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
-            <div>
-                <h4 class="fw-bold mb-0">Featured title</h4>
-                <p>Paragraph of text beneath the heading to explain the heading.</p>
-            </div>
-        </div>
-        <div class="col d-flex align-items-start">
-            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
-            <div>
-                <h4 class="fw-bold mb-0">Featured title</h4>
-                <p>Paragraph of text beneath the heading to explain the heading.</p>
-            </div>
-        </div>
-        <div class="col d-flex align-items-start">
-            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"/></svg>
-            <div>
-                <h4 class="fw-bold mb-0">Featured title</h4>
-                <p>Paragraph of text beneath the heading to explain the heading.</p>
-            </div>
-        </div>
-        <div class="col d-flex align-items-start">
-            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"/></svg>
-            <div>
-                <h4 class="fw-bold mb-0">Featured title</h4>
-                <p>Paragraph of text beneath the heading to explain the heading.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
+@*
 <div class="b-example-divider"></div>
 <div class="container py-3">        
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
@@ -396,35 +521,7 @@
             </tr>
             </tbody>
         </table>
-    </div>    </div>
+    </div>    </div>*@
     
 <div class="b-example-divider"></div>
-                
-<div class="container py-4">
-
-    <div class="p-5 mb-4 bg-light rounded-3">
-        <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-            <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-            <button class="btn btn-primary btn-lg" type="button">Example button</button>
-        </div>
-    </div>
-
-    <div class="row align-items-md-stretch">
-        <div class="col-md-6">
-            <div class="h-100 p-5 text-white bg-dark rounded-3">
-                <h2>Change the background</h2>
-                <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-                <button class="btn btn-outline-light" type="button">Example button</button>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="h-100 p-5 bg-light border rounded-3">
-                <h2>Add borders</h2>
-                <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-                <button class="btn btn-outline-secondary" type="button">Example button</button>
-            </div>
-        </div>
-    </div>
-    
-</div>
+  

@@ -3,11 +3,10 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Bh.AppWeb.Pages
 {
-    public class AboutModel : PageModel
+    public class ContactoModel : PageModel
     {
         public void OnGet()
         {
-
         }
     }
 }

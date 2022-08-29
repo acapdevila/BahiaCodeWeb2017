@@ -3,11 +3,10 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Bh.AppWeb.Pages
 {
-    public class PrecioModel : PageModel
+    public class HospiferModel : PageModel
     {
-       public void OnGet()
+        public void OnGet()
         {
-
         }
     }
 }

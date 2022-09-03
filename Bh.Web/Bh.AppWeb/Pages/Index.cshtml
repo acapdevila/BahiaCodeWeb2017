@@ -18,12 +18,7 @@
 
             </p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <a asp-page="/Contacto" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
-                    Reunámonos
-                </a>
-                <a asp-page="/Producto" class="btn btn-outline-light btn-lg px-4">
-                    Saber más
-                </a>
+                <partial name="Botones/_ReunamonosSaberMas"/>
             </div>
         </div>
     </div>
@@ -149,8 +144,7 @@
             Nuestra empresa se moldea para darte un servicio de programación a medida.
         </p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Reunámonos</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Saber más</button>
+            <partial name="Botones/_ReunamonosSaberMas"/>
         </div>
     </div>
 </div>

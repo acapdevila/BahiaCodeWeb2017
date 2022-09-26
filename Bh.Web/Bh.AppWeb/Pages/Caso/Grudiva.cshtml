@@ -1,11 +1,42 @@
 ﻿@page
-@model GrudivaModel
 @{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Caso Grudiva";
 }
+<div class="px-4 py-5 my-5 text-center">
 
-<div class="container">
-<h1>@ViewData["Title"]</h1>
+    <div class="col-lg-6 mx-auto">
+        <h1 class="display-5 fw-bold">
+            @ViewData["Title"]
+        </h1>
+        <p class="fs-5 mb-4">
+            Grudiva es una empresa que se dedica a la fabricación de ejes, engranajes y cajas de cambio.
+        </p>
+        <p class="fs-5 mb-4">
+            En 2015 su departamento de calidad nos pidió ayuda con la elaboración de cuatro informes. 
+            Los informes en concreto representaban fases de la fabricación de un mismo producto.
+        </p>
+        
+        <p class="fs-5 mb-4">
+            Ellos estaban generando estos cuatro informes de manera manual con tres documentos Excel's y un Word.
+        </p>
+        <p class="fs-5 mb-4">
+            Cualquier cambio en el proceso de fabricación del producto implicaba tener que ir a modificar los informes manualmente. 
+            Pero no era un cambio rápido de entrar modificar una línea y ya está. Había que buscar línea por línea y modificar múltiples veces.
+            
+        </p>
+        <p class="fs-3 mb-4 mt-2">
+            Nos hicieron la siguiente petición:
+        </p>
+        <p class="fs-3 mb-5">
+            Nos gustaría introducir los datos una sola vez y que los informes se generen automáticamente a partir de los datos introducidos.
+            Si hay algún cambio, queremos modificar los datos una sola vez y que los informes queden modificados automáticamente.
+        </p>
+        
+        <p class="fs-5 mb-4">Así empezamos nuestra andadura en Grudiva, con una simple aplicación que generaba cuatro informes.
+            @(DateTime.Today.Year-2015) años después hemos mejorado los procesos internos de casi todos los departamentos (Calidad, Taller, Oficina técnica, Costes, Producción y RRHH) de la empresa aplicando la misma fórmula.
+            
+        </p>
 
-<p>Use this page to detail your site's privacy policy.</p>
+    </div>
 </div>
+<div class="b-example-divider"></div>

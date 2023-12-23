@@ -43,13 +43,13 @@
             La base de datos es Azure SQL Server.
         </p>
         <p class="fs-5 mb-4">
-            Framework de acceso a datos Entity Framework.
+            ORM - Framework de acceso a datos Entity Framework.
         </p>
         <p class="fs-5 mb-4">
             El patrón de diseño para el cliente es Razor Pages.
         </p>
         <p class="fs-5 mb-4">
-            La parte frontal la realizamos con HTML, CSS, JAVASCRIPT Y JQUERY.
+            La parte frontal la realizamos con HTML, CSS, JAVASCRIPT Y JQUERY o con Blazor.
         </p>
         <p class="fs-5 mb-4">
             Framework de estilos es Bootstrap. Utilizaremos la última versión.
@@ -57,6 +57,9 @@
         <p class="fs-5 mb-4">
             Hospedaremos la aplicación (Hosting) en Azure usando un AppService Azure + SQL Azure. 
             Y si es necesario un Blob Storage.
+        </p>
+        <p class="fs-5 mb-4">
+            Pero si lo prefieres, podemos hospedar la aplicación en tu propio servidor.
         </p>
         <p class="fs-5 mb-4">
             Control de versiones GitHub. Tendrás acceso si lo deseas.
@@ -80,12 +83,17 @@
     <h1 class="display-5 fw-bold">Arquitectura</h1>
     <div class="col-lg-6 mx-auto">
         <p class="fs-5 mb-4">
-            Para la arquitectura nos basamos en la filosofía DDD (Domain Driven Design).
+            Para la arquitectura nos basamos en la filosofía DDD (Domain Driven Design) + núcleo funcional.
         </p>
         <p class="fs-5 mb-4">
             La iniciamos por la capa de dominio, la más importante de todas, donde reside la lógica del negocio.
             Es una capa que se forma de manera independiente y se encuentra aislada.
         </p>
+        <p class="fs-5 mb-4">
+            La capa de dominio contiene un núcleo funcional del que dependen todas las demás capas. Esto permite evolucionar la aplicación
+            de manera flexible y escalable.
+        </p>
+
         <p class="fs-5 mb-4">
             También usamos una capa de acceso a datos. Esta capa depende de la capa de dominio y no al revés.
             Trabajamos usando el concepto Code First, lo que nos permite centralizar en el código todos los aspectos
@@ -126,7 +134,7 @@
     </div>
 </div>
 
-
+@* 
 <div class="b-example-divider mb-0"></div>
 <div class="px-4 py-5 my-5 text-center">
     <h1 class="display-5 fw-bold">Apunte final sobre las tecnologías</h1>
@@ -154,7 +162,7 @@
             <partial name="Botones/_Reunamonos"/>
         </div>
     </div>
-</div>
+</div> *@
 
 <div class="b-example-divider mb-0"></div>
 <partial name="Elementos/_DemoApp" />

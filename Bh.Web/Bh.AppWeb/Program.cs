@@ -1,7 +1,10 @@
+using Bh.AppWeb.Components;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddRazorComponents();
 
 var app = builder.Build();
 
@@ -15,11 +18,13 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+app.UseAntiforgery();
 
-app.UseRouting();
+//app.UseRouting();
 
 app.UseAuthorization();
 
 app.MapRazorPages();
+app.MapRazorComponents<App>();
 
 app.Run();

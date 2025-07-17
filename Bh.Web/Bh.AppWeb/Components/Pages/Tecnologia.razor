@@ -1,0 +1,168 @@
+﻿@page "/tecnologia"
+    <PageTitle>Tecnología</PageTitle>
+
+<div class="bg-dark text-secondary px-4 py-5 text-center">
+    <div class="py-5">
+        <h1 class="display-5 fw-bold text-white">
+            Tecnología Microsoft
+        </h1>
+
+        <div class="col-lg-6 mx-auto">
+            <h4 class="fw-bold fs-5 mb-4 text-white">
+                Ojo, este apartado es puramente técnico, pero podemos resumirlo en un parágrafo:
+            </h4>
+
+            <p class="fs-5 mb-4 text-white">
+                Utilizamos la tecnología que usan las grandes empresas para desarrollar aplicaciones de 
+                gestión. En concreto todo el stack tecnológico de Microsoft.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="b-example-divider mb-0"></div>
+
+<div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold">ASP.NET</h1>
+    <div class="col-lg-6 mx-auto">
+
+        <p class="fs-5 mb-4">
+            Ahora sí, entramos en los puntos más técnicos.
+        </p>
+        <p class="fs-5 mb-4">
+            Desarrollaremos una aplicación con ASP.NET, un framework para crear webs y servicios con .NET y C#.
+        </p>
+        <p class="fs-5 mb-4">
+            Es gratis. Multi-plataforma. Código abierto (open source).
+        </p>
+        <p class="fs-5 mb-4">
+            El lenguaje de programación es c#.
+        </p>
+        <p class="fs-5 mb-4">
+            La base de datos es Azure SQL Server.
+        </p>
+        <p class="fs-5 mb-4">
+            ORM - Framework de acceso a datos Entity Framework.
+        </p>
+        <p class="fs-5 mb-4">
+            El patrón de diseño para el cliente es Razor Pages.
+        </p>
+        <p class="fs-5 mb-4">
+            La parte frontal la realizamos con HTML, CSS, JAVASCRIPT Y JQUERY o con Blazor.
+        </p>
+        <p class="fs-5 mb-4">
+            Framework de estilos es Bootstrap. Utilizaremos la última versión.
+        </p>
+        <p class="fs-5 mb-4">
+            Hospedaremos la aplicación (Hosting) en Azure usando un AppService Azure + SQL Azure. 
+            Y si es necesario un Blob Storage.
+        </p>
+        <p class="fs-5 mb-4">
+            Pero si lo prefieres, podemos hospedar la aplicación en tu propio servidor.
+        </p>
+        <p class="fs-5 mb-4">
+            Control de versiones GitHub. Tendrás acceso si lo deseas.
+        </p>
+        
+        <p class="fs-5 mb-4">
+            Puesta en producción (Deploy) mediante Actions de GitHub (CI/CD) o directo a la web.
+        </p>
+        <p class="fs-5 mb-4">
+            IDE de desarrollo Visual Studio.
+        </p>
+        
+        <p class="fs-5 mb-4">
+            Hasta aquí la lista de todas las tecnologías usadas para crear una aplicación personalizada.
+        </p>
+
+    </div>
+</div>
+<div class="b-example-divider mb-0"></div>
+<div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold">Arquitectura</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="fs-5 mb-4">
+            Para la arquitectura nos basamos en la filosofía DDD (Domain Driven Design) + núcleo funcional.
+        </p>
+        <p class="fs-5 mb-4">
+            La iniciamos por la capa de dominio, la más importante de todas, donde reside la lógica del negocio.
+            Es una capa que se forma de manera independiente y se encuentra aislada.
+        </p>
+        <p class="fs-5 mb-4">
+            La capa de dominio contiene un núcleo funcional del que dependen todas las demás capas. Esto permite evolucionar la aplicación
+            de manera flexible y escalable.
+        </p>
+
+        <p class="fs-5 mb-4">
+            También usamos una capa de acceso a datos. Esta capa depende de la capa de dominio y no al revés.
+            Trabajamos usando el concepto Code First, lo que nos permite centralizar en el código todos los aspectos
+            de la base de datos.
+        </p>
+        <p class="fs-5 mb-4">
+            Por último tendremos la capa de cliente. Esta capa depende de las dos anteriores.
+            La desarrollamos con la ayuda del framework Asp.net Razor Pages. 
+            Contiene el Api de entrada y la parte frontal con el diseño y el javascript necesario.
+        </p>
+
+        <p class="fs-5 mb-4">
+            Éstas son las tres capas mínimas que vamos a utilizar, pero en función de su crecimiento
+            se podría añadir una capa intermedia de coordinación (la que es conocida como una capa de servicios o capa de aplicación).
+        </p>
+        
+        <p class="fs-5 mb-4">
+            En la capa de aplicación se podrían centralizar aspectos transversales como los logs, 
+            la seguridad, la transaccionalidad de las acciones y las auditorías. 
+            Si llegamos a este punto es que todo va viento en popa.
+        </p>	
+        
+        <p class="fs-5 mb-4">
+            Utilizando todos estos conceptos podemos conseguir un desarrollo rápido y sobre todo 
+            flexible a cambios.
+        </p>	
+      
+        <p class="fs-5 mb-4 fw-bold">
+            Además, si eres programador, o tienes programadores en tu equipo, 
+            podemos dar formación sobre el código que entregamos para 
+            que vosotros mismos podáis realizar el mantenimiento. 
+            Cualquier duda la resolvemos.
+        </p>	
+@*
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <partial name="Botones/_Reunamonos"/>
+        </div>*@
+    </div>
+</div>
+
+@* 
+<div class="b-example-divider mb-0"></div>
+<div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold">Apunte final sobre las tecnologías</h1>
+    <div class="col-lg-6 mx-auto">
+
+        <p class="fs-5 mb-4">
+            Existen múltiples tipos de tecnologías y todas tienen una utilidad concreta.
+            Cada una despunta en los aspectos concretos para las que fué concebida.
+        </p>
+        
+        <p class="fs-5 mb-4">
+            Hemos escogido esta tecnología porque su especialidad es realizar aplicaciones 
+            de gestión personalizadas. Facilita todas las herramientas necesarias para ello y 
+            además estan integradas entre sí.
+        </p>
+        <p class="fs-5 mb-4">
+            Con ello podemos reducir el coste de desarrollo y de la puesta en marcha.
+        </p>
+
+        <p class="fs-5 mb-4 ">
+            Además detrás de esta tecnología está la empresa tecnológica más grande del mundo: MICROSOFT.
+        </p>
+
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <partial name="Botones/_Reunamonos"/>
+        </div>
+    </div>
+</div> *@
+
+<div class="b-example-divider mb-0"></div>
+<DemoApp />
+

@@ -1,10 +1,17 @@
 using Bh.AppWeb.Components;
+using Bh.AppWeb.Configuracion;
+using Bh.AppWeb.Servicios;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddRazorComponents();
+
+var awsConfig = new AwsConfig();
+builder.Configuration.GetSection("AWS").Bind(awsConfig);
+
+builder.Services.AddTransient(s => new AmazonSesEmailSender(awsConfig.GetAwsCredentials()));
 
 var app = builder.Build();
 

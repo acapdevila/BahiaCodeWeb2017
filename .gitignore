@@ -252,3 +252,5 @@ paket-files/
 *.sln.iml
 Bh.Web/Bh.Web/Web.Release.config
 /Bh.Web/Bh.AppWeb/Properties/ServiceDependencies/**/profile.arm.json
+/Bh.Web/Bh.AppWeb/appsettings.Production.json
+/Bh.Web/Bh.AppWeb/appsettings.Development.json

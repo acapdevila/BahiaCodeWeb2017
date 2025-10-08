@@ -1,7 +1,8 @@
 ﻿@page
+@model ContactoModel
 @{
     ViewData["Title"] = "Contacto";
-    var email = "hola@bahiacode.com";
+    var email = "albert.capdevila@bahiacode.com";
 }
 
 <div class="bg-dark text-secondary px-4 py-5 text-center">
@@ -28,6 +29,76 @@
 <div class="b-example-divider mb-0"></div>
 
 
+
+<div class="px-4 py-5 my-5 text-center">
+    <h4 class="display-5 fw-bold">Envíanos un mensaje</h4>
+    <div class="col-lg-8 mx-auto">
+        
+        @if (!string.IsNullOrEmpty(Model.SuccessMessage))
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                @Model.SuccessMessage
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                @Model.ErrorMessage
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+
+        <form method="post" class="text-start">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label asp-for="Nombre" class="form-label"></label>
+                    <input asp-for="Nombre" class="form-control" placeholder="Tu nombre completo" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="Email" class="form-label"></label>
+                    <input asp-for="Email" class="form-control" placeholder="tu@email.com" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label asp-for="Telefono" class="form-label"></label>
+                    <input asp-for="Telefono" class="form-control" placeholder="Opcional" />
+                    <span asp-validation-for="Telefono" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="Asunto" class="form-label"></label>
+                    <input asp-for="Asunto" class="form-control" placeholder="Opcional" />
+                    <span asp-validation-for="Asunto" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Mensaje" class="form-label"></label>
+                <textarea asp-for="Mensaje" class="form-control" rows="6" placeholder="Cuéntanos sobre tu proyecto o consulta..."></textarea>
+                <span asp-validation-for="Mensaje" class="text-danger"></span>
+            </div>
+
+            <div class="mb-4">
+                <label asp-for="RespuestaSeguridad" class="form-label fw-bold">
+                    Huevo, perro, abeja o viernes, ¿cuál es el día de la semana?
+                </label>
+                <input asp-for="RespuestaSeguridad" class="form-control" placeholder="Tu respuesta" />
+                <span asp-validation-for="RespuestaSeguridad" class="text-danger"></span>
+            </div>
+
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Enviar mensaje</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="b-example-divider mb-0"></div>
 
 <div class="px-4 py-5 my-5 text-center">
     <h4 class="display-5 fw-bold">Cada caso es un mundo con infinitas posibilidades</h4>
@@ -105,3 +176,7 @@
     </div>
 </div>
 *@
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

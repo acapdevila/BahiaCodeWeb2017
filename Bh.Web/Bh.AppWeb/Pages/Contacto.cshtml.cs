@@ -1,3 +1,6 @@
+using Amazon.Runtime;
+using Amazon.SimpleEmail.Model;
+using Bh.AppWeb.Servicios;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
@@ -10,11 +13,13 @@ namespace Bh.AppWeb.Pages
     {
         private readonly IConfiguration _configuration;
         private readonly ILogger<ContactoModel> _logger;
+        private readonly AmazonSesEmailSender _emailServicio;
 
-        public ContactoModel(IConfiguration configuration, ILogger<ContactoModel> logger)
+        public ContactoModel(IConfiguration configuration, ILogger<ContactoModel> logger, AmazonSesEmailSender emailServicio)
         {
             _configuration = configuration;
             _logger = logger;
+            _emailServicio = emailServicio;
         }
 
         [BindProperty]
@@ -72,6 +77,8 @@ namespace Bh.AppWeb.Pages
 
             try
             {
+             
+
                 await EnviarEmailAsync();
                 SuccessMessage = "¡Gracias! Tu mensaje ha sido enviado correctamente. Te responderemos lo antes posible.";
                 
@@ -96,52 +103,15 @@ namespace Bh.AppWeb.Pages
 
         private async Task EnviarEmailAsync()
         {
-            var smtpHost = _configuration["Email:SmtpHost"] ?? "smtp.gmail.com";
-            var smtpPort = int.Parse(_configuration["Email:SmtpPort"] ?? "587");
-            var smtpUser = _configuration["Email:SmtpUser"] ?? "";
-            var smtpPassword = _configuration["Email:SmtpPassword"] ?? "";
-            var destinatario = "albert.capdevila@bahiacode.com";
+           var body =
+                $"{Mensaje}\r\n\r\n\r\nNombre: {Nombre}\r\nE-mail: {Email}\r\nTeléfono:{Telefono}\r\n* Mensaje enviado desde el formulario de contacto de la Web";
 
-            // Si no hay configuración SMTP, simular envío exitoso en desarrollo
-            if (string.IsNullOrEmpty(smtpUser) || string.IsNullOrEmpty(smtpPassword))
-            {
-                _logger.LogWarning("No hay configuración SMTP. Simulando envío de email en desarrollo.");
-                _logger.LogInformation("Email simulado - De: {Email}, Nombre: {Nombre}, Asunto: {Asunto}, Mensaje: {Mensaje}", 
-                    Email, Nombre, Asunto ?? "Sin asunto", Mensaje);
-                await Task.CompletedTask;
-                return;
-            }
+            var respuesta = await _emailServicio.EnviarEmailDeContactoAsync(
+                    Nombre, 
+                    Email, 
+                    Asunto ?? "Contacto web", 
+                    body);
 
-            var mensaje = new MailMessage
-            {
-                From = new MailAddress(smtpUser, "Formulario Web Bahía Code"),
-                Subject = $"Contacto Web: {Asunto ?? "Sin asunto"}",
-                Body = $@"
-<html>
-<body>
-    <h2>Nuevo mensaje de contacto desde la web</h2>
-    <p><strong>Nombre:</strong> {Nombre}</p>
-    <p><strong>Email:</strong> {Email}</p>
-    <p><strong>Teléfono:</strong> {Telefono ?? "No proporcionado"}</p>
-    <p><strong>Asunto:</strong> {Asunto ?? "Sin asunto"}</p>
-    <hr>
-    <p><strong>Mensaje:</strong></p>
-    <p>{Mensaje.Replace("\n", "<br>")}</p>
-</body>
-</html>",
-                IsBodyHtml = true
-            };
-
-            mensaje.To.Add(destinatario);
-            mensaje.ReplyToList.Add(new MailAddress(Email, Nombre));
-
-            using var smtpClient = new SmtpClient(smtpHost, smtpPort)
-            {
-                EnableSsl = true,
-                Credentials = new NetworkCredential(smtpUser, smtpPassword)
-            };
-
-            await smtpClient.SendMailAsync(mensaje);
         }
     }
 }

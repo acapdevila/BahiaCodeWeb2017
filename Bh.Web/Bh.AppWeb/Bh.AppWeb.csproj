@@ -124,4 +124,8 @@
     <None Include="wwwroot\lib\bootstrap\5.1.2\scss\_variables.scss" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.SimpleEmail" Version="4.0.1.6" />
+  </ItemGroup>
+
 </Project>
